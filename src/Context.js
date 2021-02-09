@@ -30,10 +30,14 @@ const AppProvider = ({ children }) => {
 		try {
 			const response = await fetch(url);
 			const data = await response.json();
-            dispatch({
-                type: SET_STORIES,
-                payload: { hits: data.hits, nbPages: data.nbPages }
-            });
+			dispatch({
+				type: SET_STORIES,
+				payload:
+				{
+					hits: data.hits,
+					nbPages: data.nbPages
+				},
+			});
 		} catch (error) {
 			console.log(error);
 		}
@@ -44,12 +48,12 @@ const AppProvider = ({ children }) => {
 	}, []);
 
 	return (
-        <AppContext.Provider value={{ ...state }}>
-            {children}
-        </AppContext.Provider>
+		<AppContext.Provider value={{ ...state }}>
+			{children}
+		</AppContext.Provider>
 	);
 };
-// make sure use
+
 export const useGlobalContext = () => {
 	return useContext(AppContext);
 };
