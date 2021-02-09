@@ -1,5 +1,6 @@
 .stories {
 	background: #94b5c0 !important;
+	margin-left: 5vw;
 }
 
 .remove-btn {
@@ -59,7 +60,7 @@
 .blob-2 {
 	left: 80%;
 	animation: osc-r 2.5s ease infinite;
-	background: #94b5c0;
+	background: #ffffff;
 }
 @keyframes osc-l {
 	0% {

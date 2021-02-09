@@ -5,7 +5,7 @@ import { Navbar, Nav, Form, FormControl, Button, Card } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
 const Stories = () => {
-	const { isLoading, hits } = useGlobalContext();
+	const { isLoading, hits, removeStory } = useGlobalContext();
 
 	if (isLoading) {
 		return (
@@ -19,16 +19,7 @@ const Stories = () => {
 	}
 	return (
 		<section className='stories'>
-			<Navbar bg='dark' variant='dark'>
-				<Navbar.Brand href='#home' className='icon'>
-					News App
-				</Navbar.Brand>
-				<Nav className='mr-auto'></Nav>
-				<Form inline className='search-form'>
-					<FormControl type='text' placeholder='Search' className='mr-sm-2' />
-					<Button variant='outline-info'>Search</Button>
-				</Form>
-			</Navbar>
+			
 			{hits.map((story) => {
 				const { objectID, title, num_comments, url, points, author } = story;
 
@@ -52,7 +43,8 @@ const Stories = () => {
 											target='_blank'>
 											Read More
 										</Button>{' '}
-										<Button variant='danger' className='remove-btn'>
+										<Button variant='danger' className='remove-btn'
+										onClick={() => removeStory(objectID)}>
 											Remove
 										</Button>
 									</div>

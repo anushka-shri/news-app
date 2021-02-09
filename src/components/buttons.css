@@ -1,0 +1,15 @@
+.buttons{
+    background: #94b5c0 !important;
+    transform: translate(40%);
+    display: flex;
+    margin-top: 10vh;
+    
+}
+
+.text{
+    color: rgb(0, 0, 0) !important;
+}
+
+.button{
+    background: #94b5c0 !important;
+}

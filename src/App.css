@@ -1,5 +1,10 @@
 .App {
 	text-align: center;
+	
+}
+
+body{
+	background: #94b5c0 !important;
 }
 
 .story {
