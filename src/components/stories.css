@@ -2,3 +2,37 @@
 
     background: #94b5c0 !important;
 }
+
+.remove-btn{
+
+    background:#fff !important;
+    color: red !important;
+}
+
+.remove-btn:hover{
+
+    background: #ec4646 !important;
+    color: #fff !important;
+}
+
+.read-btn:hover{
+  background: #fff !important;
+  color: rgb(5, 4, 4) !important;
+}
+
+.card-header{
+    font-size:1.3rem !important;
+    font-weight:600 !important;
+
+
+}
+
+.icon{
+
+    font-weight: 500;
+    margin-left: 2vw;
+}
+
+.search-form{
+    margin-right: 4vw;
+}
