@@ -4,6 +4,8 @@ import './stories.css';
 import { Navbar, Nav, Form, FormControl, Button, Card } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
+
+
 const Stories = () => {
 	const { isLoading, hits, removeStory } = useGlobalContext();
 
@@ -26,7 +28,7 @@ const Stories = () => {
 				return (
 					<article className='story' key={objectID}>
 						<Fade bottom>
-							<Card border='warning' style={{ width: '25rem' }}>
+							<Card border='warning' style={{ width: '25rem' }} className='Card'>
 								<Card.Header className='card-header'>{title}</Card.Header>
 								<Card.Body>
 									<Card.Text>

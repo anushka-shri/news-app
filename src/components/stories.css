@@ -3,6 +3,10 @@
 	margin-left: 5vw;
 }
 
+.Card:hover{
+	box-shadow: 14px 12px 14px -8px #d5cfcf   ;
+}
+
 .remove-btn {
 	background: #fff !important;
 	color: red !important;
